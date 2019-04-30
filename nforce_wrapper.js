@@ -25,12 +25,15 @@ const createConnection = function(configOptionsRaw, msg) {
   //console.log( 'OrgOptions: ' + JSON.stringify(orgOptions,null,2) );
   const connectionResult = nforce8.createConnection(orgOptions);
   //console.log('ConnectionResult: ' + connectionResult);
+  connectionResult.clientSecret = configOptions.consumerSecret;
   const result = {
     connection: connectionResult,
     config: configOptions
   };
-  console.log( 'Result: ' + JSON.stringify(result.connection,null,2) );
-  
+  console.log( 'Connection: ' + JSON.stringify(result.connection,null,2) );
+  console.log( 'Config: ' + JSON.stringify(result.config,null,2) );
+
+
   return result;
 };
 
@@ -38,7 +41,7 @@ const createConnection = function(configOptionsRaw, msg) {
 // TODO: Token authentication for Salesforce roundtrip
 const authenticate = function(org, configOptions) {
   // TODO: Check if we have a incomign session
-  console.log( 'Org: ' + org );
+  //console.log( 'Org: ' + org );
   return org.authenticate(configOptions);
 };
 
