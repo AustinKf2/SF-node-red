@@ -1,7 +1,7 @@
 module.exports = function (RED) {
     function ConnectionConfig(n) {
         RED.nodes.createNode(this, n);
-        this.consumerKey = '3MVG9zlTNB8o8BA2CpIGbnn1W5KTHimZsFmDSTQsNYFYIC2CTKXU6QJhJy0n9pkRz8Rl6V5yyYPxJTMteF630';
+        this.consumerKey = n.consumerKey;
         this.consumerSecret = n.consumerSecret;
         this.callbackUrl = n.callbackUrl;
         if (n.environment.substr(0, 6) === 'custom') {
