@@ -1,63 +1,32 @@
 {
-  "_from": "node-red-contrib-salesforce",
-  "_id": "node-red-contrib-salesforce@0.6.0-alpha",
-  "_inBundle": false,
-  "_integrity": "sha512-xaDYoU5997aInaAiHmxORvhO1m7vnLVbUExfjozGWCO49GZanm+54ROFryvo1AMq7+RqHGzUWgqRLCZri3c5cQ==",
-  "_location": "/node-red-contrib-salesforce",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "node-red-contrib-salesforce",
-    "name": "node-red-contrib-salesforce",
-    "escapedName": "node-red-contrib-salesforce",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/node-red-contrib-salesforce/-/node-red-contrib-salesforce-0.6.0-alpha.tgz",
-  "_shasum": "3a4ba728c8f0e197f5b5e543948e4b9c041d5de5",
-  "_spec": "node-red-contrib-salesforce",
-  "_where": "C:\\Program Files\\nodejs\\node_modules\\node-red",
+  "name": "node-red-contrib-salesforce",
+  "version": "0.6.1-alpha",
+  "description": "A set of Node-RED nodes to interact with Salesforce and Force.com.",
   "author": {
     "name": "Jeff Douglas",
     "url": "http://blog.jeffdouglas.com"
   },
-  "bugs": {
-    "url": "https://github.com/Stwissel/node-red-contrib-salesforce/issues"
-  },
-  "bundleDependencies": false,
   "contributors": [
     {
       "name": "Stephan H. Wissel",
-      "email": "stephan@wissel.net",
-      "url": "https://wissel.net"
+      "url": "https://wissel.net",
+      "email": "stephan@wissel.net"
     },
     {
       "name": "Srikanth Ramakrishnan",
       "email": "srikanth.r@salesforce.com"
     }
   ],
-  "dependencies": {
-    "faye": "^1.2.4",
-    "nforce8": "^2.0.6",
-    "xml2js": "^0.4.19"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Stwissel/node-red-contrib-salesforce"
   },
-  "deprecated": false,
-  "description": "A set of Node-RED nodes to interact with Salesforce and Force.com.",
-  "homepage": "https://github.com/Stwissel/node-red-contrib-salesforce#readme",
   "keywords": [
     "node-red",
     "salesforce",
     "forcedotcom",
     "Heroku"
   ],
-  "license": "MIT",
-  "name": "node-red-contrib-salesforce",
   "node-red": {
     "nodes": {
       "soql": "soql.js",
@@ -69,15 +38,16 @@
       "connection-config": "connection-config.js"
     }
   },
-  "publishConfig": {
-    "access": "public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Stwissel/node-red-contrib-salesforce.git"
+  "license": "MIT",
+  "dependencies": {
+    "faye": "^1.2.4",
+    "nforce8": "^2.0.6",
+    "xml2js": "^0.4.19"
   },
   "scripts": {
     "test": "echo \"Shame: no test specified\" && exit 0"
   },
-  "version": "0.6.0-alpha"
+  "publishConfig": {
+    "access": "public"
+  }
 }

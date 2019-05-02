@@ -5,7 +5,7 @@ module.exports = function (RED) {
         const node = this;
         RED.nodes.createNode(node, config);
         this.connection = RED.nodes.getNode(config.connection);
-        //console.log(this.connection);
+
         this.on('input', function (msg) {
             // show initial status of progress
             node.status({ fill: 'green', shape: 'ring', text: 'connecting....' });
